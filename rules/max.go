@@ -8,6 +8,7 @@ import (
 	"github.com/yaien/structure/core"
 )
 
+// Max validate if a value is less or equal than a max value, for strings it compares the length
 func Max(params []string) (core.ValidateFunc, error) {
 	max, err := strconv.ParseFloat(params[0], 64)
 	if err != nil {

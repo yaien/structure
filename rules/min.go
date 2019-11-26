@@ -8,6 +8,7 @@ import (
 	"github.com/yaien/structure/core"
 )
 
+// Min validate if a value is greater or equal than a min value, for strings it compares the length
 func Min(params []string) (core.ValidateFunc, error) {
 	min, err := strconv.ParseFloat(params[0], 64)
 	if err != nil {

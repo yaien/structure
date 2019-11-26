@@ -9,6 +9,7 @@ import (
 	"github.com/yaien/structure/core"
 )
 
+// Between validate if a value is between a min and max value, for strings it compares the length
 func Between(params []string) (core.ValidateFunc, error) {
 	if len(params) != 2 {
 		return nil, errors.New("between rule should receive 2 params: min,max")
