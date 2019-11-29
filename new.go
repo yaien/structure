@@ -8,8 +8,11 @@ import (
 // New return the default validation parser
 func New() Parser {
 	return &parser{validations: map[string]core.GetValidateFunc{
-		"min":     rules.Min,
-		"max":     rules.Max,
-		"between": rules.Between,
+		"min":      rules.Min,
+		"max":      rules.Max,
+		"between":  rules.Between,
+		"date":     rules.Date,
+		"required": rules.Required,
+		"email":    rules.Email,
 	}}
 }
