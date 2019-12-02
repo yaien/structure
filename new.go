@@ -14,5 +14,6 @@ func New() Parser {
 		"date":     rules.Date,
 		"required": rules.Required,
 		"email":    rules.Email,
+		"in":       rules.In,
 	}}
 }
