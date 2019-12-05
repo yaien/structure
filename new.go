@@ -16,5 +16,7 @@ func New() Parser {
 		"email":    rules.Email,
 		"in":       rules.In,
 		"equal":    rules.Equal,
+		"alpha":    rules.Alpha,
+		"alphanum": rules.AlphaNum,
 	}}
 }
