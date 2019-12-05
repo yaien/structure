@@ -18,5 +18,6 @@ func New() Parser {
 		"equal":    rules.Equal,
 		"alpha":    rules.Alpha,
 		"alphanum": rules.AlphaNum,
+		"pattern": rules.Pattern
 	}}
 }
